@@ -1,13 +1,8 @@
-def main():
-    f = open("whale.aln")
-    lines=f.readlines()
-    print(lines)
-    final = []
-    for i in range(1, len(lines)):
-        final += lines[i].rstrip('\n')
-    #print(final)
+f = open("whale.aln")
+lines=f.readlines()
 
-
-
-
-main()
+whales=["","",""]
+for i in range(0, 3):
+	for j in range(10*i+1,10*i+9):
+		whales[i] += lines[j].rstrip('\n')
+print("beluga\n",whales[0],"\ndolphin\n",whales[1],"\norca\n",whales[2])
