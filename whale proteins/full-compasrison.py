@@ -9,6 +9,8 @@ def compare(x, y):
     return counts
 
 f = open("whale.aln")
+g = open("animaux.aln")
+w= 
 lines=f.readlines()
 
 whales=["","",""]
