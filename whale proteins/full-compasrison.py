@@ -10,10 +10,14 @@ def compare(x, y):
 
 f = open("whale.aln")
 g = open("animaux.aln")
-w= 
+lines1=g.readlines() 
 lines=f.readlines()
-
+others=["","",""]
 whales=["","",""]
+for i in range(0, 3):
+        for j in range(10*i+1,10*i+9):
+                others[i] += lines1[j].rstrip('\n')
+
 for i in range(0, 3):
 	for j in range(10*i+1,10*i+9):
 		whales[i] += lines[j].rstrip('\n')
