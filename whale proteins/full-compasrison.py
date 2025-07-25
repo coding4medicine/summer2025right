@@ -7,8 +7,8 @@ def compare(x, y):
     print(counts)
 
     return counts
-
-f = open("whale.aln")
+list = [["","beluga","dolphin" , "orca","Zebra Fish","Cow","Rat"], ["beluga","", "", "","","",""], ["orca","", "", "","","",""]["Zebra Fish","", "", "","","",""]["Cow", "", "","","","",""]["Rat","", "", "","","",""]]
+f=open("whale.aln")
 g = open("animaux.aln")
 lines1=g.readlines() 
 lines=f.readlines()
@@ -22,9 +22,13 @@ for i in range(0, 3):
 	for j in range(10*i+1,10*i+9):
 		whales[i] += lines[j].rstrip('\n')
 #print("beluga\n",whales[0],"\ndolphin\n",whales[1],"\norca\n",whales[2])
-print("beluga vs dolphin")
-compare(whales[0], whales[1])
-print("dolphin vs orca")
-compare(whales[1],whales[2])
-print("orca vs beluga")
-compare(whales[2],whales[0])
+print(list[0])
+print(list[1])
+print(list[2])
+print(list[3])
+print(list[4])
+print(list[5])
+print(list[6])
+print(list[7])
+
+
