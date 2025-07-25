@@ -8,28 +8,20 @@ def compare(x, y):
 
     return(counts)
 list = [
-    ["          ", "beluga", "dolphin", "orca", "Zebra Fish", "Cow", "Rat"],
+    ["          ", "zebra fish", "rat", "cattle", "beluga", "dolphin", "orca"],
+    ["zebra fish", "    ", "    ", "    ", "    ", "    ", "    "],
+    ["rat       ", "    ", "    ", "    ", "    ", "    ", "    "],
+    ["cattle    ", "    ", "    ", "    ", "    ", "    ", "    "],
     ["beluga    ", "    ", "    ", "    ", "    ", "    ", "    "],
     ["dolphin   ", "    ", "    ", "    ", "    ", "    ", "    "],
-    ["orca      ", "    ", "    ", "    ", "    ", "    ", "    "],
-    ["Zebra Fish", "    ", "    ", "    ", "    ", "    ", "    "],
-    ["Cow       ", "    ", "    ", "    ", "    ", "    ", "    "],
-    ["Rat       ", "    ", "    ", "    ", "    ", "    ", "    "]
+    ["orca      ", "    ", "    ", "    ", "    ", "    ", "    "]
 ]
 f=open("/home/spadejac/main-folder/summer2025right/whale proteins/whale.aln")
-g = open("/home/spadejac/main-folder/summer2025right/whale proteins/animaux.aln")
-lines1=g.readlines() 
 lines=f.readlines()
-#print(len(lines))
 animals=["","","","","",""]
-for i in range(0, 3):
-        for j in range(10*i+1,10*i+9):
-                animals[i] += lines1[j].rstrip('\n')
-
-for i in range(0, 3):
+for i in range(0, 6):
       for j in range(10*i+1,10*i+9):
-
-        animals[i+3] += lines[j].rstrip('\n')
+        animals[i] += lines[j].rstrip('\n')
 for i in range(1,7):
       for j in range(1,7):
         #    print(len(animals[i-1]))
