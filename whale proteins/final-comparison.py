@@ -16,7 +16,7 @@ list = [
     ["dolphin   ", "    ", "    ", "    ", "    ", "    ", "    "],
     ["orca      ", "    ", "    ", "    ", "    ", "    ", "    "]
 ]
-f=open("whale.aln")
+f=open("/home/spadejac/main-folder/summer2025right/whale proteins/whale.aln")
 lines=f.readlines()
 animals=["","","","","",""]
 for i in range(0, 6):
