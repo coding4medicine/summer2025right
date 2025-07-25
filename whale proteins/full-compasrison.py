@@ -7,7 +7,14 @@ def compare(x, y):
     print(counts)
 
     return counts
-list = [["","beluga","dolphin" , "orca","Zebra Fish","Cow","Rat"], ["beluga","", "", "","","",""], ["orca","", "", "","","",""]["Zebra Fish","", "", "","","",""]["Cow", "", "","","","",""]["Rat","", "", "","","",""]]
+list = [
+    ["", "beluga", "dolphin", "orca", "Zebra Fish", "Cow", "Rat"],
+    ["beluga", "", "", "", "", "", ""],
+    ["orca", "", "", "", "", "", ""],
+    ["Zebra Fish", "", "", "", "", "", ""],
+    ["Cow", "", "", "", "", "", ""],
+    ["Rat", "", "", "", "", "", ""]
+]
 f=open("whale.aln")
 g = open("animaux.aln")
 lines1=g.readlines() 
@@ -28,7 +35,7 @@ print(list[2])
 print(list[3])
 print(list[4])
 print(list[5])
-print(list[6])
-print(list[7])
+#print(list[6])
+#print(list[7])
 
 
